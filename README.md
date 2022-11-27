@@ -1,6 +1,6 @@
 # Searchium.ai™
 
-# OpenSearch/Elasticsearch Plugin
+# OpenSearch Plugin
 
 ## Documentation
 
