@@ -53,8 +53,6 @@ To configure your VPC to work with Searchium.ai:
 2. From your AWS console click VPC. The Resources by Region page appears.
 3. Ensure that you are using the US-WEST-1 region.
 4. Click VPCs. The Your VPCs page appears.
-
-
 5. Click Create VPC. The Create VPC page appears.
 6. Click Create VPC. The VPC workflow is created.
 
@@ -70,20 +68,18 @@ To connect to Searchium.ai’s transit gateway:
     button.
 5. Click OK to confirm acceptance of the resource share.
 6. The resource that was shared should be listed in the shared resources table:
-
-
 7. Select Transit gateway attachments from your virtual private cloud page, and
     then click the Create transit gateway attachment button in the top right corner
     of the panel.
 8. In the Create transit gateway attachment screen:
 
 
-a. In the Details section s elect the transit gateway ID
+   a. In the Details section s elect the transit gateway ID
 
-b. In the VPC attachment section, select the VPC ID of the VPC you
-created in 2.1 Configuring a VPC on page 3.
+   b. In the VPC attachment section, select the VPC ID of the VPC you
+   created in 2.1 Configuring a VPC on page 3.
 
-c. Click Create:
+   c. Click Create:
 
 
 9. The transit gateway attachment’s status will change to Pending and then to
@@ -136,11 +132,11 @@ To configure the Searchium.ai OpenSearch/Elasticsearch Plugin:
 1. Update the plugin configuration file with the Searchium.ai server IP.
 
 
-a. Open opensearch.yml/elasticsearch.yml in a console.
+   a. Open opensearch.yml/elasticsearch.yml in a console.
 
-b. Get the IP addresses from the plan’s allocation details section
+   b. Get the IP addresses from the plan’s allocation details section
 
-c. Add the following lines to the file:
+   c. Add the following lines to the file:
 gsi.service.host: <your Searchium.ai server IP address>
 gsi.search.host: < IP address of OpenSearch server backend>
 
@@ -197,17 +193,17 @@ gsi.search.host: <IP address of OpenSearch server backend OpenSearch>
 
 To configure where datasets are stored:
 
-10. Click Plugin settings. The Plugin settings page appears.
-11. Click the Advanced settings tab.
-12. To store datasets locally:
+1. Click Plugin settings. The Plugin settings page appears.
+2. Click the Advanced settings tab.
+3. To store datasets locally:
     a. Click LOCAL FS.
     b. Enter the folder path. If both the plugin and the Searchium.ai backend
        server are installed locally, you can use a local folder. If the plugin and
        backend server are not installed locally, use an EFS shared folder.
-13. To store datasets on an AWS S3 server
+4. To store datasets on an AWS S3 server
     a. Click AMAZON S3.
     b. Enter the login information, region, and Amazon bucket name.
-3. Click Apply. The file location is saved.
+5. Click Apply. The file location is saved.
 
 
 ### 2.4.Associating a Cloud Service
